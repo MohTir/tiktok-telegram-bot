@@ -3,7 +3,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 import os
 
-TOKEN = os.environ.get("8096546428:AAE1SmXhPx9FMPlBnjd9pUAe_kaUbxAVUmQ")
+TOKEN = os.environ.get("BOT_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("🎥 أرسل رابط TikTok وسأنزله لك بدون علامة مائية!")
